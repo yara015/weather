@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+        <div class="report">
+            <div class="search">
+                <input type="text" name="cityName" id="searchBar" value="" placeholder="Enter Location" required onkeypress="handleKeyPress(event)">   
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="details">
+                <h3 class="city">Weather in Hyderabad</h3>
+                <h4 class="date"></h4>
+                <img src="images/rain.png" class="weather-icon">
+                <h1 class="temp">23°c</h1>
+                <h2 class="type">haze</h2>
+            
+                
+                <div class="extradetails">
+                    <div class="col">
+                        <img src="images/hum.jpg" alt="" class="icon" >
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png" alt="" class="icon" >
+                        <div>
+                            <p class="wind">50%</p>
+                            <p>Wind</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/pressure.png" alt="" class="icon" >
+                        <div>
+                            <p class="pressure">50%</p>
+                            <p>Pressure</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col">
+                        <img src="images/humidity.png" alt="" class="icon" >
+                        <div>
+                            <p class="precipitation">50%</p>
+                            <p>Precipitation</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/humidity.png" alt="" class="icon" >
+                        <div>
+                            <p class="dewpoint">50%</p>
+                            <p>Dew Point</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/humidity.png" alt="" class="icon" >
+                        <div>
+                            <p class="cloudcover">50%</p>
+                            <p>Cloud Cover</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
